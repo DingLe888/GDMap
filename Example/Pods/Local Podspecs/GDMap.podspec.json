@@ -1,0 +1,22 @@
+{
+  "name": "GDMap",
+  "version": "0.1.0",
+  "summary": "A short description of GDMap.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/18911755085@163.com/GDMap",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "18911755085@163.com": "18911755085@163.com"
+  },
+  "source": {
+    "git": "https://github.com/18911755085@163.com/GDMap.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "GDMap/Classes/**/*"
+}

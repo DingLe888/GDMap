@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'GDMap'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of GDMap.'
+  s.summary          = '集成高德SDK暴露一些方法'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/18911755085@163.com/GDMap'
+  s.homepage         = 'https://github.com/DingLe888/GDMap'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '18911755085@163.com' => '18911755085@163.com' }
@@ -35,6 +35,14 @@ TODO: Add long description of the pod here.
   # s.resource_bundles = {
   #   'GDMap' => ['GDMap/Assets/*.png']
   # }
+
+  s.resource = 'Resources/*'
+
+  s.frameworks = 'GLKit','OpenGLES','CoreGraphics','QuartzCore','CoreLocation','CoreTelephony','SystemConfiguration','Security','AdSupport','JavaScriptCore','UIKit','Foundation'
+
+  s.libraries = 'z','stdc++.6.0.9','c++'
+
+  s.vendored_frameworks = 'Frameworks/*'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

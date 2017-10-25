@@ -1,0 +1,6 @@
+framework module GDMap {
+  umbrella header "GDMap-umbrella.h"
+
+  export *
+  module * { export * }
+}

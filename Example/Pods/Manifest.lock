@@ -1,0 +1,16 @@
+PODS:
+  - GDMap (0.1.0)
+
+DEPENDENCIES:
+  - GDMap (from `../`)
+
+EXTERNAL SOURCES:
+  GDMap:
+    :path: ../
+
+SPEC CHECKSUMS:
+  GDMap: b01ad93ec42891ec0253f9c15f863759cf54b41c
+
+PODFILE CHECKSUM: 6a5edfa082cb2df25ebceee9f59c41eebbb01e6c
+
+COCOAPODS: 1.4.0.beta.1
