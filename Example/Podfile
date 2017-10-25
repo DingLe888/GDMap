@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'GDMap_Example' do
+  pod 'GDMap', :path => '../'
+
+  target 'GDMap_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
