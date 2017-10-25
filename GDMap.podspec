@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '18911755085@163.com' => '18911755085@163.com' }
-  s.source           = { :git => 'https://github.com/18911755085@163.com/GDMap.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/DingLe888/GDMap.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
