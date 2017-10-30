@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GDMap'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = '集成高德SDK暴露一些方法'
 
 # This description is used to generate tags and improve search results.
@@ -36,7 +36,7 @@ TODO: Add long description of the pod here.
   #   'GDMap' => ['GDMap/Assets/*.png']
   # }
 
-  s.resource = 'Resources/*'
+  s.resource = 'Resources/*','arena.plugins.plist'
 
   s.frameworks = 'GLKit','OpenGLES','CoreGraphics','QuartzCore','CoreLocation','CoreTelephony','SystemConfiguration','Security','AdSupport','JavaScriptCore','UIKit','Foundation'
 
