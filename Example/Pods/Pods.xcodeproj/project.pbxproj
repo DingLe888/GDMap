@@ -7,16 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0351E01A5551078F14922822FEC5A55E /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E12FF228C249F0FCCBD103E6F25AF /* MapViewController.m */; };
+		0AB24284F0626A83681488AADCFB97AF /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA64E05419D84E7F4402700996ED131F /* JavaScriptCore.framework */; };
+		0E4DCE9FB0726E4F65A50753287CAAEB /* GDMapManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 330F204548841C64FCCB5CD588D93D3A /* GDMapManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C92543E9A39708188D466D04B7D2019 /* Pods-GDMap_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4522989AE590071F06A35278DEF39F /* Pods-GDMap_Tests-dummy.m */; };
 		27492CBB29F6C42CAFD4200880D0A7B0 /* Pods-GDMap_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D20B3F358D6D9E304D77D7B22C8A01F3 /* Pods-GDMap_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2AF8E2E24C54D768CC38A5CB506A5F0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		34AA2FA9A9A51938D9C5A8F988A683CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		34AA2FA9A9A51938D9C5A8F988A683CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B77C3457EB98712FADDD1AC54290B6 /* Foundation.framework */; };
 		354C4EB40F9653C1EC89CB9DC718EBAA /* Pods-GDMap_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C27204B58BE0193659E6D567F0CA73C /* Pods-GDMap_Example-dummy.m */; };
+		37F5441BE5D62A1DADD89F14FA8FB0EA /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4526983A6EB7AA1A844305933B1901BA /* AdSupport.framework */; };
 		48A7E514373F9B03291FF9B19102998A /* Pods-GDMap_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3328415994EBBE43B0D8D375B1E7031B /* Pods-GDMap_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		611D2871A8B36488BF46B8C2ADA04266 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		B807ACC5FBD698F54211BE4C768F3034 /* GDMap-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A02DF99F90379DEF3D256A1930FD9106 /* GDMap-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D0491DA2AB10574E33126FAEE243CC59 /* GDMap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FE5D531076D980D74E8AA8824B74DC /* GDMap-dummy.m */; };
-		E470D48D374895E70D46F06B20B5B9F5 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BBDC1BE71905251B9F783810642A31 /* ReplaceMe.m */; };
+		5D6199AE1501F2B24860C0D474940A26 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F86B2B288103F1A4D34B3C1B3E68363D /* CoreLocation.framework */; };
+		611D2871A8B36488BF46B8C2ADA04266 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B77C3457EB98712FADDD1AC54290B6 /* Foundation.framework */; };
+		7F2D9C482EF1C881FD2221FB5A5557F8 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5985C6819369058FD6D5D1A789FC2FD3 /* GLKit.framework */; };
+		84495C0D3410B0BAA4557D14096E1A38 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411A7322EF7B8B8ADCFE960195CE34E6 /* Security.framework */; };
+		86283F90CE6C96397482DBC106692A54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B77C3457EB98712FADDD1AC54290B6 /* Foundation.framework */; };
+		8794BF0EE752920D9DE53C6EFC40D0EB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832F868CAC74BB0C69AD7708B7B48A87 /* OpenGLES.framework */; };
+		8812B3BB2A4431A8424FDE28CDCA9DEC /* GDMap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C34FA03FDF54A2BC9EF1FC55C00922 /* GDMap-dummy.m */; };
+		88BC8E7617520237B9005B47CD8BBD04 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8F7A94A491771D86AF927B431B4E5C /* CoreGraphics.framework */; };
+		913A45C9D7D7C70CE8B8F6ED5221C2D7 /* MapViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ED18921049F91AED056D90DA03EE85A /* MapViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		926D74CECCEC47FE92F35315769A18C5 /* arena.gdmap.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B55022801368FF874E1BF68002D0F15 /* arena.gdmap.plist */; };
+		9F0403EDB1F367754CB62B159954A1A3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D440688330378FD0DCB4FCF715EE0CE /* QuartzCore.framework */; };
+		A8947E9222A02F6EE491CB033D73FE74 /* GDMap-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F263F04FD202CAD0E69F3AE7B9A228A /* GDMap-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACE1B86E59972429212188B2ED663929 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B14E06437FCA5783DFC99EEF7FE92CB /* SystemConfiguration.framework */; };
+		D5A5980E0097A0CC8D8C69C0620677D3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E6FAA13BBB9471652C6B0F35721BFB /* CoreTelephony.framework */; };
+		ED7CE6CB1CE78D6DEBF8A10696D9084B /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 347CF12A9858017BEB868919939C2DEB /* AMap.bundle */; };
+		F5F510C5A44967558BE0AD55D5DA3170 /* GDMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD0A6030E2776AFF7E40D16BBD8BA1 /* GDMapManager.m */; };
+		F97D647893A868BB342F17301D2595AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581BCB1FA9B75893569C222B8BD04164 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,55 +40,68 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 028D26089FB41948AC369696C36DE796;
+			remoteGlobalIDString = 32186673E83B9733A66AE09587C3A1F2;
 			remoteInfo = GDMap;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B2FE4FB25C6370DF8FF351B09A4DF0B /* GDMap.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GDMap.modulemap; sourceTree = "<group>"; };
+		03FC09DBB4FD48AA0AF1B5B333B9B7BD /* AMapLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapLocationKit.framework; path = Frameworks/AMapLocationKit.framework; sourceTree = "<group>"; };
 		0C9A492A6A460008529455ADA67B29D3 /* Pods-GDMap_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GDMap_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		1910CBB4866C3180ABC9A04FD16CB20C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F1817A445676D67B60B56281527E2B5 /* GDMap.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GDMap.xcconfig; sourceTree = "<group>"; };
+		0F263F04FD202CAD0E69F3AE7B9A228A /* GDMap-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GDMap-umbrella.h"; sourceTree = "<group>"; };
+		14E7602A5D07621D322AFF48A214EDA4 /* GDMap.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GDMap.modulemap; sourceTree = "<group>"; };
+		225E12FF228C249F0FCCBD103E6F25AF /* MapViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = GDMap/Classes/MapViewController.m; sourceTree = "<group>"; };
 		24AEDBEEFAEE2D70936E9A25BD126DC4 /* Pods-GDMap_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GDMap_Example-frameworks.sh"; sourceTree = "<group>"; };
+		24B77C3457EB98712FADDD1AC54290B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		29CFB46C884EE9AF8620C3C5348E6747 /* Pods-GDMap_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GDMap_Example.release.xcconfig"; sourceTree = "<group>"; };
+		2ADD0A6030E2776AFF7E40D16BBD8BA1 /* GDMapManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDMapManager.m; path = GDMap/Classes/GDMapManager.m; sourceTree = "<group>"; };
 		2B1570668341B4CAF59393FDDDDF2170 /* Pods-GDMap_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GDMap_Tests-resources.sh"; sourceTree = "<group>"; };
 		2F724792C2C5B12E82E9025F7EAC61F4 /* Pods-GDMap_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GDMap_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		3124992D9460DF05EBF79B4C940B85F7 /* Pods_GDMap_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GDMap_Example.framework; path = "Pods-GDMap_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		330F204548841C64FCCB5CD588D93D3A /* GDMapManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDMapManager.h; path = GDMap/Classes/GDMapManager.h; sourceTree = "<group>"; };
 		3328415994EBBE43B0D8D375B1E7031B /* Pods-GDMap_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GDMap_Tests-umbrella.h"; sourceTree = "<group>"; };
+		347CF12A9858017BEB868919939C2DEB /* AMap.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = Resources/AMap.bundle; sourceTree = "<group>"; };
 		3536553FC2884ACAF502464CC991202A /* Pods-GDMap_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GDMap_Tests.modulemap"; sourceTree = "<group>"; };
 		3AA0ED0DB266466DCCB5C0C6CF0A7BA9 /* Pods-GDMap_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GDMap_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3B55022801368FF874E1BF68002D0F15 /* arena.gdmap.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = arena.gdmap.plist; path = Resources/arena.gdmap.plist; sourceTree = "<group>"; };
 		3D66573D8C8B70D6A7C0B0015864CD91 /* Pods-GDMap_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GDMap_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		41BBDC1BE71905251B9F783810642A31 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = GDMap/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		411A7322EF7B8B8ADCFE960195CE34E6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		436C9DC775BFF217BD515FAED88E97C9 /* Pods-GDMap_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GDMap_Example.modulemap"; sourceTree = "<group>"; };
+		4526983A6EB7AA1A844305933B1901BA /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
 		4B4522989AE590071F06A35278DEF39F /* Pods-GDMap_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GDMap_Tests-dummy.m"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		581BCB1FA9B75893569C222B8BD04164 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		5985C6819369058FD6D5D1A789FC2FD3 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
+		5B14E06437FCA5783DFC99EEF7FE92CB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		5ED18921049F91AED056D90DA03EE85A /* MapViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = GDMap/Classes/MapViewController.h; sourceTree = "<group>"; };
 		6C27204B58BE0193659E6D567F0CA73C /* Pods-GDMap_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GDMap_Example-dummy.m"; sourceTree = "<group>"; };
 		6C6D6E468B067E8C03A61C0E1CC6D164 /* Pods-GDMap_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GDMap_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6EFCAE2DBA7303B4FB962034BD06308B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7CCC1490BDFE2676CD698EF80FFB86A8 /* GDMap-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GDMap-prefix.pch"; sourceTree = "<group>"; };
+		70C34FA03FDF54A2BC9EF1FC55C00922 /* GDMap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GDMap-dummy.m"; sourceTree = "<group>"; };
+		7D440688330378FD0DCB4FCF715EE0CE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		832F868CAC74BB0C69AD7708B7B48A87 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
 		8EF5104A8CFC1F2062021660ACD38BBF /* GDMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GDMap.framework; path = GDMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A02DF99F90379DEF3D256A1930FD9106 /* GDMap-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GDMap-umbrella.h"; sourceTree = "<group>"; };
+		97B0DA120C24CC6A0D107912C2818EEB /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapSearchKit.framework; path = Frameworks/AMapSearchKit.framework; sourceTree = "<group>"; };
+		97F5A2C4688DA30650E6FA91AACDF278 /* GDMap-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GDMap-prefix.pch"; sourceTree = "<group>"; };
+		A4E6FAA13BBB9471652C6B0F35721BFB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		A8C7AD3167429919CA0D5C03C3C5F230 /* AMapFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapFoundationKit.framework; path = Frameworks/AMapFoundationKit.framework; sourceTree = "<group>"; };
+		A8E8B3881D9FFC6DE7C743B70934F001 /* AMapNaviKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapNaviKit.framework; path = Frameworks/AMapNaviKit.framework; sourceTree = "<group>"; };
 		B176F271FB1AB912B20FBE15E4C7C2A6 /* Pods_GDMap_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GDMap_Tests.framework; path = "Pods-GDMap_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8FE5D531076D980D74E8AA8824B74DC /* GDMap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GDMap-dummy.m"; sourceTree = "<group>"; };
+		BE9B3EF8F70AADF59D2078C287FB5CEC /* GDMap.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GDMap.xcconfig; sourceTree = "<group>"; };
 		C5DB3EE11275EA0C7C692ACF99D7C5C1 /* Pods-GDMap_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GDMap_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C6C7B593F586D473C099E2AC346A34F8 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = Frameworks/MAMapKit.framework; sourceTree = "<group>"; };
+		C77671ED0E39B7D4F7F73A80FC085C62 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE3B204F31BAD683EE08D7C515EB39E6 /* Pods-GDMap_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GDMap_Example-resources.sh"; sourceTree = "<group>"; };
 		D20B3F358D6D9E304D77D7B22C8A01F3 /* Pods-GDMap_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GDMap_Example-umbrella.h"; sourceTree = "<group>"; };
 		D37738FE83F67FD77D5F3ED3CF563EA3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3F0A2F06F63C1D656C68CD3473C69E9 /* Pods-GDMap_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GDMap_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		EA64E05419D84E7F4402700996ED131F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		F86B2B288103F1A4D34B3C1B3E68363D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
 		FA0F9F7DCFF2851B4C4B68E23CF2C270 /* Pods-GDMap_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GDMap_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FC8F7A94A491771D86AF927B431B4E5C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3F2C2F43995C8581ED2D70023BDC9567 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2AF8E2E24C54D768CC38A5CB506A5F0C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		43F9596220030DA4977A1232386B6467 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,6 +115,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				611D2871A8B36488BF46B8C2ADA04266 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F89C192E134D211ACFAA91B4A89267A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F5441BE5D62A1DADD89F14FA8FB0EA /* AdSupport.framework in Frameworks */,
+				88BC8E7617520237B9005B47CD8BBD04 /* CoreGraphics.framework in Frameworks */,
+				5D6199AE1501F2B24860C0D474940A26 /* CoreLocation.framework in Frameworks */,
+				D5A5980E0097A0CC8D8C69C0620677D3 /* CoreTelephony.framework in Frameworks */,
+				86283F90CE6C96397482DBC106692A54 /* Foundation.framework in Frameworks */,
+				7F2D9C482EF1C881FD2221FB5A5557F8 /* GLKit.framework in Frameworks */,
+				0AB24284F0626A83681488AADCFB97AF /* JavaScriptCore.framework in Frameworks */,
+				8794BF0EE752920D9DE53C6EFC40D0EB /* OpenGLES.framework in Frameworks */,
+				9F0403EDB1F367754CB62B159954A1A3 /* QuartzCore.framework in Frameworks */,
+				84495C0D3410B0BAA4557D14096E1A38 /* Security.framework in Frameworks */,
+				ACE1B86E59972429212188B2ED663929 /* SystemConfiguration.framework in Frameworks */,
+				F97D647893A868BB342F17301D2595AF /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,37 +167,66 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		6C61B79F4876C7F3FDBF4D19723DF865 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				B971BEDE46B1E716E0BA33A96F74279F /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				B9CAAF7ED63F8FACB232A5E8A1D37FE4 /* Products */,
-				5A46105621D47A3B2C313D052524FE8D /* Targets Support Files */,
+				D41C6FD5BD6D8539D24967653A8EC7A5 /* iOS */,
 			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7E4E027B3BE84BC078DD093F58B900DA /* Support Files */ = {
+		74108FA03C2FDF1639228D1188815C67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0B2FE4FB25C6370DF8FF351B09A4DF0B /* GDMap.modulemap */,
-				1F1817A445676D67B60B56281527E2B5 /* GDMap.xcconfig */,
-				B8FE5D531076D980D74E8AA8824B74DC /* GDMap-dummy.m */,
-				7CCC1490BDFE2676CD698EF80FFB86A8 /* GDMap-prefix.pch */,
-				A02DF99F90379DEF3D256A1930FD9106 /* GDMap-umbrella.h */,
-				1910CBB4866C3180ABC9A04FD16CB20C /* Info.plist */,
+				A8C7AD3167429919CA0D5C03C3C5F230 /* AMapFoundationKit.framework */,
+				03FC09DBB4FD48AA0AF1B5B333B9B7BD /* AMapLocationKit.framework */,
+				A8E8B3881D9FFC6DE7C743B70934F001 /* AMapNaviKit.framework */,
+				97B0DA120C24CC6A0D107912C2818EEB /* AMapSearchKit.framework */,
+				C6C7B593F586D473C099E2AC346A34F8 /* MAMapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D4A4B4EB82DD01E09D8CEA9A4094FEC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				14E7602A5D07621D322AFF48A214EDA4 /* GDMap.modulemap */,
+				BE9B3EF8F70AADF59D2078C287FB5CEC /* GDMap.xcconfig */,
+				70C34FA03FDF54A2BC9EF1FC55C00922 /* GDMap-dummy.m */,
+				97F5A2C4688DA30650E6FA91AACDF278 /* GDMap-prefix.pch */,
+				0F263F04FD202CAD0E69F3AE7B9A228A /* GDMap-umbrella.h */,
+				C77671ED0E39B7D4F7F73A80FC085C62 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/GDMap";
 			sourceTree = "<group>";
 		};
-		B971BEDE46B1E716E0BA33A96F74279F /* Development Pods */ = {
+		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				C11F609A62F526270BBEE0D4283C66A2 /* GDMap */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				B7C21663161BD50A6D67940C2E5E72E1 /* Development Pods */,
+				6C61B79F4876C7F3FDBF4D19723DF865 /* Frameworks */,
+				B9CAAF7ED63F8FACB232A5E8A1D37FE4 /* Products */,
+				5A46105621D47A3B2C313D052524FE8D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B7C21663161BD50A6D67940C2E5E72E1 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3CECDD04CE5D1A49D3D7C74BAFE9453 /* GDMap */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B8EB0144BA28F4DF9BCB2B5394499E48 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				347CF12A9858017BEB868919939C2DEB /* AMap.bundle */,
+				3B55022801368FF874E1BF68002D0F15 /* arena.gdmap.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		B9CAAF7ED63F8FACB232A5E8A1D37FE4 /* Products */ = {
@@ -162,19 +239,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		C3CECDD04CE5D1A49D3D7C74BAFE9453 /* GDMap */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C11F609A62F526270BBEE0D4283C66A2 /* GDMap */ = {
-			isa = PBXGroup;
-			children = (
-				41BBDC1BE71905251B9F783810642A31 /* ReplaceMe.m */,
-				7E4E027B3BE84BC078DD093F58B900DA /* Support Files */,
+				330F204548841C64FCCB5CD588D93D3A /* GDMapManager.h */,
+				2ADD0A6030E2776AFF7E40D16BBD8BA1 /* GDMapManager.m */,
+				5ED18921049F91AED056D90DA03EE85A /* MapViewController.h */,
+				225E12FF228C249F0FCCBD103E6F25AF /* MapViewController.m */,
+				74108FA03C2FDF1639228D1188815C67 /* Frameworks */,
+				B8EB0144BA28F4DF9BCB2B5394499E48 /* Resources */,
+				7D4A4B4EB82DD01E09D8CEA9A4094FEC /* Support Files */,
 			);
 			name = GDMap;
 			path = ../..;
@@ -198,10 +272,21 @@
 			path = "Target Support Files/Pods-GDMap_Example";
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		D41C6FD5BD6D8539D24967653A8EC7A5 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				4526983A6EB7AA1A844305933B1901BA /* AdSupport.framework */,
+				FC8F7A94A491771D86AF927B431B4E5C /* CoreGraphics.framework */,
+				F86B2B288103F1A4D34B3C1B3E68363D /* CoreLocation.framework */,
+				A4E6FAA13BBB9471652C6B0F35721BFB /* CoreTelephony.framework */,
+				24B77C3457EB98712FADDD1AC54290B6 /* Foundation.framework */,
+				5985C6819369058FD6D5D1A789FC2FD3 /* GLKit.framework */,
+				EA64E05419D84E7F4402700996ED131F /* JavaScriptCore.framework */,
+				832F868CAC74BB0C69AD7708B7B48A87 /* OpenGLES.framework */,
+				7D440688330378FD0DCB4FCF715EE0CE /* QuartzCore.framework */,
+				411A7322EF7B8B8ADCFE960195CE34E6 /* Security.framework */,
+				5B14E06437FCA5783DFC99EEF7FE92CB /* SystemConfiguration.framework */,
+				581BCB1FA9B75893569C222B8BD04164 /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -209,14 +294,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		25FEE8A9478685A2388E216F25B9B39D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B807ACC5FBD698F54211BE4C768F3034 /* GDMap-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3A7774C5A48289F286875A40780DF556 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -233,16 +310,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F7A42E30EFE2E26CA082305C45EF0132 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8947E9222A02F6EE491CB033D73FE74 /* GDMap-umbrella.h in Headers */,
+				0E4DCE9FB0726E4F65A50753287CAAEB /* GDMapManager.h in Headers */,
+				913A45C9D7D7C70CE8B8F6ED5221C2D7 /* MapViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		028D26089FB41948AC369696C36DE796 /* GDMap */ = {
+		32186673E83B9733A66AE09587C3A1F2 /* GDMap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AEACE50E1FF4277E54C19CF4584B98B2 /* Build configuration list for PBXNativeTarget "GDMap" */;
+			buildConfigurationList = 557952D12B96E03AEE7B74A7C8282A72 /* Build configuration list for PBXNativeTarget "GDMap" */;
 			buildPhases = (
-				13CCBE07DD4A3B93ECEB6C8C53193DEE /* Sources */,
-				3F2C2F43995C8581ED2D70023BDC9567 /* Frameworks */,
-				25FEE8A9478685A2388E216F25B9B39D /* Headers */,
+				48CAC5301812488471B133BA98F9559D /* Sources */,
+				9F89C192E134D211ACFAA91B4A89267A /* Frameworks */,
+				F7A42E30EFE2E26CA082305C45EF0132 /* Headers */,
+				E4DD6940881A5F6336927D7FC2E9AE1D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -309,12 +397,24 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				028D26089FB41948AC369696C36DE796 /* GDMap */,
+				32186673E83B9733A66AE09587C3A1F2 /* GDMap */,
 				9D813DC115C45212812C97694D2565BE /* Pods-GDMap_Example */,
 				E0A7C38B7D65CC067CE0CC84635895EA /* Pods-GDMap_Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4DD6940881A5F6336927D7FC2E9AE1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED7CE6CB1CE78D6DEBF8A10696D9084B /* AMap.bundle in Resources */,
+				926D74CECCEC47FE92F35315769A18C5 /* arena.gdmap.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0D6DDA7AD2CB7E35F20B0A68CFF71FC5 /* Sources */ = {
@@ -325,12 +425,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		13CCBE07DD4A3B93ECEB6C8C53193DEE /* Sources */ = {
+		48CAC5301812488471B133BA98F9559D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0491DA2AB10574E33126FAEE243CC59 /* GDMap-dummy.m in Sources */,
-				E470D48D374895E70D46F06B20B5B9F5 /* ReplaceMe.m in Sources */,
+				8812B3BB2A4431A8424FDE28CDCA9DEC /* GDMap-dummy.m in Sources */,
+				F5F510C5A44967558BE0AD55D5DA3170 /* GDMapManager.m in Sources */,
+				0351E01A5551078F14922822FEC5A55E /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,12 +449,42 @@
 		66FF89F8FF2E1C5E5C12DC96FB79824A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GDMap;
-			target = 028D26089FB41948AC369696C36DE796 /* GDMap */;
+			target = 32186673E83B9733A66AE09587C3A1F2 /* GDMap */;
 			targetProxy = 1F69EB2CA55CCD225FE5ADC7134F0C44 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		17C94CC6C10D8813B40BC1DDFE1F6CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE9B3EF8F70AADF59D2078C287FB5CEC /* GDMap.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GDMap/GDMap-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GDMap/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GDMap/GDMap.modulemap";
+				PRODUCT_NAME = GDMap;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -534,42 +665,9 @@
 			};
 			name = Release;
 		};
-		AC59D53C0CC90EA5EE9EEAF4A9C6949C /* Release */ = {
+		8599F58C137E3D73F0EB5A7BF50DCA03 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29CFB46C884EE9AF8620C3C5348E6747 /* Pods-GDMap_Example.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GDMap_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GDMap_Example/Pods-GDMap_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GDMap_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B48E1C8B2365DA471EF45BAC20A7CBFE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F1817A445676D67B60B56281527E2B5 /* GDMap.xcconfig */;
+			baseConfigurationReference = BE9B3EF8F70AADF59D2078C287FB5CEC /* GDMap.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -596,9 +694,9 @@
 			};
 			name = Debug;
 		};
-		B727322B6B8CBD7E2F33470903F0E143 /* Release */ = {
+		AC59D53C0CC90EA5EE9EEAF4A9C6949C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F1817A445676D67B60B56281527E2B5 /* GDMap.xcconfig */;
+			baseConfigurationReference = 29CFB46C884EE9AF8620C3C5348E6747 /* Pods-GDMap_Example.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -609,16 +707,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GDMap/GDMap-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GDMap/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-GDMap_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GDMap/GDMap.modulemap";
-				PRODUCT_NAME = GDMap;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GDMap_Example/Pods-GDMap_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GDMap_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -670,11 +771,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AEACE50E1FF4277E54C19CF4584B98B2 /* Build configuration list for PBXNativeTarget "GDMap" */ = {
+		557952D12B96E03AEE7B74A7C8282A72 /* Build configuration list for PBXNativeTarget "GDMap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B48E1C8B2365DA471EF45BAC20A7CBFE /* Debug */,
-				B727322B6B8CBD7E2F33470903F0E143 /* Release */,
+				8599F58C137E3D73F0EB5A7BF50DCA03 /* Debug */,
+				17C94CC6C10D8813B40BC1DDFE1F6CBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

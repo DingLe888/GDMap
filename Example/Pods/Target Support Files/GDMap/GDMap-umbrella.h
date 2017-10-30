@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "GDMapManager.h"
+#import "MapViewController.h"
 
 FOUNDATION_EXPORT double GDMapVersionNumber;
 FOUNDATION_EXPORT const unsigned char GDMapVersionString[];

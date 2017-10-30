@@ -3,6 +3,8 @@ use_frameworks!
 target 'GDMap_Example' do
   pod 'GDMap', :path => '../'
 
+  pod 'AMap3DMap'
+
   target 'GDMap_Tests' do
     inherit! :search_paths
 

@@ -4,6 +4,8 @@
 //
 //  Created by 丁乐 on 2017/10/25.
 //  如果需要同时支持在iOS8-iOS10和iOS11系统上后台定位，建议在plist文件中同时添加NSLocationWhenInUseUsageDescription、NSLocationAlwaysUsageDescription和NSLocationAlwaysAndWhenInUseUsageDescription权限申请。
+// //   需要手动把资源Bundle 拖入工程中
+
 
 
 #import <Foundation/Foundation.h>
