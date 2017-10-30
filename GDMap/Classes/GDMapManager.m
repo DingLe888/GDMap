@@ -9,6 +9,8 @@
 #import <AMapFoundationKit/AMapFoundationKit.h>
 #import <AMapLocationKit/AMapLocationKit.h>
 #import <AMapSearchKit/AMapSearchKit.h>
+#import <MAMapKit/MAMapKit.h>
+#import "MapViewController.h"
 
 
 @interface GDMapManager()<AMapLocationManagerDelegate,AMapSearchDelegate>
@@ -242,6 +244,22 @@ static GDMapManager *instance;
     
     [self putResult:resultDict data:self.searchData];
 
+}
+
+//===================   地图部分  ======================
++(void)showMapview{
+    
+    UIViewController *rootVC = [[[UIApplication sharedApplication] keyWindow] rootViewController];
+    
+    MapViewController *mapVC = [[MapViewController alloc]init];
+    
+    UINavigationController *mapNav = [[UINavigationController alloc]initWithRootViewController:mapVC];
+    
+    [rootVC presentViewController:mapNav animated:YES completion:^{
+        
+    }];
+    
+    
 }
 
 

@@ -2,22 +2,48 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>namespace</key>
+	<string>GDMap</string>
+	<key>project</key>
+	<string>GDMap</string>
 	<key>supports</key>
 	<array>
 		<dict>
+			<key>paiNotes</key>
+			<string>开始获取当前地理位置</string>
 			<key>api</key>
-			<string>arena.device.info</string>
+			<string>arena.device.geolocation.get</string>
 			<key>method</key>
-			<string>deviceInfo:</string>
+			<string>startUpdatingLocation:</string>
 			<key>className</key>
-			<string>Device</string>
+			<string>GDMapManager</string>
 			<key>async</key>
 			<true/>
 		</dict>
+		<dict>
+			<key>paiNotes</key>
+			<string>停止获取当前地理位置</string>
+			<key>api</key>
+			<string>arena.device.geolocation.stop</string>
+			<key>method</key>
+			<string>stopUpdatingLocation</string>
+			<key>className</key>
+			<string>GDMapManager</string>
+			<key>async</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>paiNotes</key>
+			<string>显示MapView</string>
+			<key>api</key>
+			<string>arena.biz.map.view </string>
+			<key>method</key>
+			<string>showMapview</string>
+			<key>className</key>
+			<string>GDMapManager</string>
+			<key>async</key>
+			<false/>
+		</dict>
 	</array>
-	<key>namespace</key>
-	<string></string>
-	<key>project</key>
-	<string></string>
 </dict>
 </plist>
