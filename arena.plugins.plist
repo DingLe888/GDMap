@@ -10,9 +10,33 @@
 	<array>
 		<dict>
 			<key>paiNotes</key>
-			<string>开始获取当前地理位置</string>
+			<string>POI 关键字搜索</string>
+			<key>api</key>
+			<string>arena.device.geolocation.poisearch</string>
+			<key>method</key>
+			<string>poiKeywordsSearch:</string>
+			<key>className</key>
+			<string>GDMapManager</string>
+			<key>async</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>paiNotes</key>
+			<string>单次定位</string>
 			<key>api</key>
 			<string>arena.device.geolocation.get</string>
+			<key>method</key>
+			<string>getLocation:</string>
+			<key>className</key>
+			<string>GDMapManager</string>
+			<key>async</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>paiNotes</key>
+			<string>开始获取当前地理位置</string>
+			<key>api</key>
+			<string>arena.device.geolocation.start</string>
 			<key>method</key>
 			<string>startUpdatingLocation:</string>
 			<key>className</key>
