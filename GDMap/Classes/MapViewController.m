@@ -6,13 +6,13 @@
 //
 
 #import "MapViewController.h"
+
 #import <MAMapKit/MAMapKit.h>
 #import <AMapFoundationKit/AMapFoundationKit.h>
 
 
 @interface MapViewController ()
 
-//@property (nonatomic,weak)MAMapView * mapView;
 
 @end
 
@@ -23,14 +23,14 @@
 
     ///初始化地图
     MAMapView *_mapView = [[MAMapView alloc] initWithFrame:self.view.bounds];
-    
+
     ///把地图添加至view
     [self.view addSubview:_mapView];
-    
-    ///如果您需要进入地图就显示定位小蓝点，则需要下面两行代码
+//
+//    ///如果您需要进入地图就显示定位小蓝点，则需要下面两行代码
     _mapView.showsUserLocation = YES;
     _mapView.userTrackingMode = MAUserTrackingModeFollow;
-    
+
     [_mapView setZoomLevel:14.0];
     
     

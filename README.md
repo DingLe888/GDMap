@@ -13,6 +13,8 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
         return true
 }
 ```
+* 需要配置定位权限，如果需要同时支持在iOS8-iOS10和iOS11系统上后台定位，建议在plist文件中同时添加NSLocationWhenInUseUsageDescription、NSLocationAlwaysUsageDescription和NSLocationAlwaysAndWhenInUseUsageDescription权限申请。
+* 后台定位需要开启 Capabilities 中 background Model 的Location updates选项。
 
 ## 资源文件
 * arena.plugins.plist文件主要是配合Arena而做的一个维护api和函数实现之间的映射关系plist文件，不需要去关心。

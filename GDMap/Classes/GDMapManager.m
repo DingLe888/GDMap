@@ -123,9 +123,10 @@ static GDMapManager *instance;
        NSMutableDictionary *resultDict = [NSMutableDictionary dictionaryWithDictionary:reGeocodeDict];
         
         [resultDict setObject:@"success" forKey:@"result"];
-        
+        [resultDict setObject:@(location.coordinate.latitude) forKey:@"latitude"];
+        [resultDict setObject:@(location.coordinate.longitude) forKey:@"longitude"];
         [self putResult:resultDict data:self.locationData];
-        NSLog(@"reGeocode:%@", reGeocodeDict);
+        NSLog(@"reGeocode:%@", resultDict);
     }
 }
 
@@ -249,6 +250,9 @@ static GDMapManager *instance;
 //===================   地图部分  ======================
 +(void)showMapview{
     
+    [[self getInstance] showMapview];
+}
+-(void)showMapview{
     UIViewController *rootVC = [[[UIApplication sharedApplication] keyWindow] rootViewController];
     
     MapViewController *mapVC = [[MapViewController alloc]init];
@@ -258,8 +262,6 @@ static GDMapManager *instance;
     [rootVC presentViewController:mapNav animated:YES completion:^{
         
     }];
-    
-    
 }
 
 
