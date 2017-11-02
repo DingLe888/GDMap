@@ -55,7 +55,11 @@ static GDMapManager *instance;
         }
         
         _locationManager.delegate = self;
+        
+        ///设定定位的最小更新距离。单位米，默认为 kCLDistanceFilterNone，表示只要检测到设备位置发生变化就会更新位置信息。
         _locationManager.distanceFilter = 200.0;
+        
+        ///连续定位是否返回逆地理信息，默认NO。
         _locationManager.locatingWithReGeocode = YES;
     }
     
@@ -87,7 +91,7 @@ static GDMapManager *instance;
 +(void)getLocation:(NSDictionary *)data{
     GDMapManager *ma = [GDMapManager getInstance];
     
-    [ma.locationManager requestLocationWithReGeocode:YES completionBlock:^(CLLocation *location, AMapLocationReGeocode *regeocode, NSError *error) {
+    BOOL success = [ma.locationManager requestLocationWithReGeocode:YES completionBlock:^(CLLocation *location, AMapLocationReGeocode *regeocode, NSError *error) {
         NSMutableDictionary *resultDict = [NSMutableDictionary  dictionary];
         if(error){
             [resultDict setObject:@"failed" forKey:@"result"];
@@ -95,13 +99,24 @@ static GDMapManager *instance;
 
         }else if (regeocode){
             ma.mCity = regeocode.city;
+            
+            [resultDict setObject:@(location.coordinate.latitude) forKey:@"latitude"];
+            [resultDict setObject:@(location.coordinate.longitude) forKey:@"longitude"];
+            
             NSDictionary *reGeocodeDict = [regeocode dictionaryWithValuesForKeys:@[@"formattedAddress",@"country",@"province",@"city",@"district",@"street",@"number",@"POIName",]];
             [resultDict setDictionary:reGeocodeDict];
-            
+            [resultDict setObject:reGeocodeDict[@"formattedAddress"] forKey:@"address"];
             [resultDict setObject:@"success" forKey:@"result"];
         }
+        
         [ma putResult:resultDict data:data];
     }];
+    
+    if(!success){
+        NSDictionary *resultDict = @{@"result":@"failed",@"msg":@"当前正在持续定位中，不能进行单次定位"};
+        
+        [ma putResult:resultDict data:data];
+    }
 }
 
 // 结束定位
@@ -114,7 +129,7 @@ static GDMapManager *instance;
 //接收位置更新,实现AMapLocationManagerDelegate代理的amapLocationManager:didUpdateLocation方法，处理位置更新
 - (void)amapLocationManager:(AMapLocationManager *)manager didUpdateLocation:(CLLocation *)location reGeocode:(AMapLocationReGeocode *)reGeocode
 {
-    NSLog(@"location:{lat:%f; lon:%f; accuracy:%f}", location.coordinate.latitude, location.coordinate.longitude, location.horizontalAccuracy);
+//    NSLog(@"location:{lat:%f; lon:%f; accuracy:%f}", location.coordinate.latitude, location.coordinate.longitude, location.horizontalAccuracy);
     if (reGeocode)
     {
         self.mCity = reGeocode.city;
@@ -122,11 +137,13 @@ static GDMapManager *instance;
         NSDictionary *reGeocodeDict = [reGeocode dictionaryWithValuesForKeys:@[@"formattedAddress",@"country",@"province",@"city",@"district",@"street",@"number",@"POIName",]];
        NSMutableDictionary *resultDict = [NSMutableDictionary dictionaryWithDictionary:reGeocodeDict];
         
+        [resultDict setObject:reGeocodeDict[@"formattedAddress"] forKey:@"address"];
+
         [resultDict setObject:@"success" forKey:@"result"];
         [resultDict setObject:@(location.coordinate.latitude) forKey:@"latitude"];
         [resultDict setObject:@(location.coordinate.longitude) forKey:@"longitude"];
         [self putResult:resultDict data:self.locationData];
-        NSLog(@"reGeocode:%@", resultDict);
+//        NSLog(@"reGeocode:%@", resultDict);
     }
 }
 
@@ -152,7 +169,7 @@ static GDMapManager *instance;
 +(void)poiKeywordsSearch:(NSDictionary *)data{
     GDMapManager *ma = [GDMapManager getInstance];
 
-    if(data && data[@"keywords"]){
+    if(data && data[@"keyword"]){
         ma.searchData = data;
 
         NSString *allTypes = @"汽车服务|汽车销售|汽车维修|摩托车服务|餐饮服务|购物服务|生活服务|体育休闲服务|医疗保健服务|住宿服务|风景名胜|商务住宅|政府机构及社会团体|科教文化服务|交通设施服务|金融保险服务|公司企业|道路附属设施|地名地址信息|公共设施";
@@ -221,7 +238,7 @@ static GDMapManager *instance;
     
     NSMutableDictionary *resultDict = [NSMutableDictionary dictionary];
     
-    NSLog(@"response: %@",response);
+//    NSLog(@"response: %@",response);
     if (response.pois.count == 0)
     {
         [resultDict setObject:@"failed" forKey:@"result"];
@@ -248,14 +265,15 @@ static GDMapManager *instance;
 }
 
 //===================   地图部分  ======================
-+(void)showMapview{
++(void)showMapview:(NSDictionary *)data{
     
-    [[self getInstance] showMapview];
+    [[self getInstance] showMapview:data];
 }
--(void)showMapview{
+
+-(void)showMapview:(NSDictionary *)data{
     UIViewController *rootVC = [[[UIApplication sharedApplication] keyWindow] rootViewController];
     
-    MapViewController *mapVC = [[MapViewController alloc]init];
+    MapViewController *mapVC = [[MapViewController alloc]initWithData:data];
     
     UINavigationController *mapNav = [[UINavigationController alloc]initWithRootViewController:mapVC];
     

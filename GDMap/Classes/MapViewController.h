@@ -9,4 +9,5 @@
 
 @interface MapViewController : UIViewController
 
+-(instancetype)initWithData:(NSDictionary *)date;
 @end

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>namespace</key>
-	<string>GDMap</string>
+	<string></string>
 	<key>project</key>
 	<string>GDMap</string>
 	<key>supports</key>
@@ -54,19 +54,19 @@
 			<key>className</key>
 			<string>GDMapManager</string>
 			<key>async</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>paiNotes</key>
 			<string>显示MapView</string>
 			<key>api</key>
-			<string>arena.biz.map.view </string>
+			<string>arena.biz.map.view</string>
 			<key>method</key>
-			<string>showMapview</string>
+			<string>showMapview:</string>
 			<key>className</key>
 			<string>GDMapManager</string>
 			<key>async</key>
-			<false/>
+			<true/>
 		</dict>
 	</array>
 </dict>
