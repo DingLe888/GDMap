@@ -95,25 +95,28 @@ static GDMapManager *instance;
         NSMutableDictionary *resultDict = [NSMutableDictionary  dictionary];
         if(error){
             [resultDict setObject:@"failed" forKey:@"result"];
-            [resultDict setObject:[error localizedDescription] forKey:@"msg"];
+            [resultDict setObject:[error localizedDescription] forKey:@"data"];
 
         }else if (regeocode){
             ma.mCity = regeocode.city;
-            
-            [resultDict setObject:@(location.coordinate.latitude) forKey:@"latitude"];
-            [resultDict setObject:@(location.coordinate.longitude) forKey:@"longitude"];
+            NSMutableDictionary *data = [NSMutableDictionary  dictionary];
+
+            [data setObject:@(location.coordinate.latitude) forKey:@"latitude"];
+            [data setObject:@(location.coordinate.longitude) forKey:@"longitude"];
             
             NSDictionary *reGeocodeDict = [regeocode dictionaryWithValuesForKeys:@[@"formattedAddress",@"country",@"province",@"city",@"district",@"street",@"number",@"POIName",]];
-            [resultDict setDictionary:reGeocodeDict];
-            [resultDict setObject:reGeocodeDict[@"formattedAddress"] forKey:@"address"];
+            [data setDictionary:reGeocodeDict];
+            [data setObject:reGeocodeDict[@"formattedAddress"] forKey:@"address"];
+            
             [resultDict setObject:@"success" forKey:@"result"];
+            [resultDict setObject:data forKey:@"data"];
         }
         
         [ma putResult:resultDict data:data];
     }];
     
     if(!success){
-        NSDictionary *resultDict = @{@"result":@"failed",@"msg":@"当前正在持续定位中，不能进行单次定位"};
+        NSDictionary *resultDict = @{@"result":@"failed",@"data":@"当前正在持续定位中，不能进行单次定位"};
         
         [ma putResult:resultDict data:data];
     }
@@ -133,17 +136,20 @@ static GDMapManager *instance;
     if (reGeocode)
     {
         self.mCity = reGeocode.city;
+        NSMutableDictionary *resultDict = [NSMutableDictionary dictionary];
+        [resultDict setObject:@"success" forKey:@"result"];
 
         NSDictionary *reGeocodeDict = [reGeocode dictionaryWithValuesForKeys:@[@"formattedAddress",@"country",@"province",@"city",@"district",@"street",@"number",@"POIName",]];
-       NSMutableDictionary *resultDict = [NSMutableDictionary dictionaryWithDictionary:reGeocodeDict];
         
-        [resultDict setObject:reGeocodeDict[@"formattedAddress"] forKey:@"address"];
+        NSMutableDictionary *data = [NSMutableDictionary dictionaryWithDictionary:reGeocodeDict];
 
-        [resultDict setObject:@"success" forKey:@"result"];
-        [resultDict setObject:@(location.coordinate.latitude) forKey:@"latitude"];
-        [resultDict setObject:@(location.coordinate.longitude) forKey:@"longitude"];
+        [data setObject:reGeocodeDict[@"formattedAddress"] forKey:@"address"];
+
+        [data setObject:@(location.coordinate.latitude) forKey:@"latitude"];
+        [data setObject:@(location.coordinate.longitude) forKey:@"longitude"];
+        [resultDict setObject:data forKey:@"data"];
+        
         [self putResult:resultDict data:self.locationData];
-//        NSLog(@"reGeocode:%@", resultDict);
     }
 }
 
@@ -224,7 +230,7 @@ static GDMapManager *instance;
 - (void)AMapSearchRequest:(id)request didFailWithError:(NSError *)error{
     NSMutableDictionary *resultDict = [NSMutableDictionary dictionary];
     [resultDict setObject:@"failed" forKey:@"result"];
-    [resultDict setObject:[error localizedDescription] forKey:@"msg"];
+    [resultDict setObject:[error localizedDescription] forKey:@"data"];
 
     [self putResult:resultDict data:self.searchData];
 }
@@ -242,22 +248,25 @@ static GDMapManager *instance;
     if (response.pois.count == 0)
     {
         [resultDict setObject:@"failed" forKey:@"result"];
-        [resultDict setObject:@"未查询到任何数据" forKey:@"msg"];
+        [resultDict setObject:@"未查询到任何数据" forKey:@"data"];
         
     }else{
         NSMutableArray *poiArray = [NSMutableArray array];
         for (AMapPOI *obj in response.pois) {
             NSDictionary *dict = [obj dictionaryWithValuesForKeys:@[@"name",@"type",
-                                                                    @"location",@"address",
+                                                                    @"address",
                                                                     @"tel",@"province",
                                                                     @"city",@"district",
                                                                     @"businessArea",@"uid"]];
-            
-            [poiArray addObject:dict];
+            NSMutableDictionary *poi_dict = [NSMutableDictionary dictionaryWithDictionary:dict];
+            [poi_dict setObject:@(obj.location.latitude) forKey:@"latitude"];
+            [poi_dict setObject:@(obj.location.longitude) forKey:@"longitude"];
 
+            
+            [poiArray addObject:poi_dict];
         }
-         [resultDict setObject:@"success" forKey:@"result"];
-        [resultDict setObject:poiArray forKey:@"pois"];
+        [resultDict setObject:@"success" forKey:@"result"];
+        [resultDict setObject:poiArray forKey:@"data"];
     }
     
     [self putResult:resultDict data:self.searchData];
