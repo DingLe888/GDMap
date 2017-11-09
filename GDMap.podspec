@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GDMap'
-  s.version          = '1.0.9'
+  s.version          = '1.1.0'
   s.summary          = '集成高德SDK暴露一些方法'
 
 # This description is used to generate tags and improve search results.
@@ -35,6 +35,17 @@ TODO: Add long description of the pod here.
   # s.resource_bundles = {
   #   'GDMap' => ['GDMap/Assets/*.png']
   # }
+
+   dir = File.dirname(__FILE__)
+   dirs = '$(PODS_ROOT)/GDMap/Frameworks/AMapFoundationKit.framework/Headers'
+
+
+   s.pod_target_xcconfig = { 
+      'HEADER_SEARCH_PATHS' => "\"$(PODS_ROOT)/GDMap/Frameworks/AMapFoundationKit.framework/Headers\" \"$(PODS_ROOT)/GDMap/Frameworks/AMapLocationKit.framework/Headers\" \"$(PODS_ROOT)/GDMap/Frameworks/AMapNaviKit.framework/Headers\" \"$(PODS_ROOT)/GDMap/Frameworks/AMapSearchKit.framework/Headers\" \"$(PODS_ROOT)/GDMap/Frameworks/MAMapKit.framework/Headers\""
+
+
+      #"\"/Users/dingle/Desktop/arena/iOS_framework/GDMap/Frameworks/AMapFoundationKit.framework/Headers\" \"/Users/dingle/Desktop/arena/iOS_framework/GDMap/Frameworks/AMapLocationKit.framework/Headers\" \"/Users/dingle/Desktop/arena/iOS_framework/GDMap/Frameworks/AMapNaviKit.framework/Headers\" \"/Users/dingle/Desktop/arena/iOS_framework/GDMap/Frameworks/AMapSearchKit.framework/Headers\" \"/Users/dingle/Desktop/arena/iOS_framework/GDMap/Frameworks/MAMapKit.framework/Headers\""
+   }
 
   s.resource = '*.bundle','*.plist'
 
